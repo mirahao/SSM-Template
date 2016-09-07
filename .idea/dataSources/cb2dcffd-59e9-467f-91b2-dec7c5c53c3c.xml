@@ -1,0 +1,1931 @@
+<dataSource name="MySQL - mcb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="mcb">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema" />
+    <schema id="3" name="mcbapp" />
+    <schema id="4" name="mysql" />
+    <schema id="5" name="performance_schema" />
+    <schema id="6" name="testdata" />
+    <table id="7" parent="1" name="boss_company_message" />
+    <table id="8" parent="1" name="boss_daydomes" />
+    <table id="9" parent="1" name="boss_foodbooks" />
+    <table id="10" parent="1" name="boss_monthdomes" />
+    <table id="11" parent="1" name="boss_report" />
+    <table id="12" parent="1" name="boss_yeardomes" />
+    <table id="13" parent="1" name="cashier_orderdata" />
+    <table id="14" parent="1" name="cashier_printer" />
+    <table id="15" parent="1" name="center_charge" />
+    <table id="16" parent="1" name="center_commodity_category" />
+    <table id="17" parent="1" name="center_employee" />
+    <table id="18" parent="1" name="center_fkfs" />
+    <table id="19" parent="1" name="center_head_shop" />
+    <table id="20" parent="1" name="center_key_value" />
+    <table id="21" parent="1" name="center_login_log" />
+    <table id="22" parent="1" name="center_opening_time_slot" />
+    <table id="23" parent="1" name="center_pay_way" />
+    <table id="24" parent="1" name="center_shop_online_tongji" />
+    <table id="25" parent="1" name="center_shop_title_image" />
+    <table id="26" parent="1" name="center_spbq" />
+    <table id="27" parent="1" name="center_store_accounts" />
+    <table id="28" parent="1" name="center_store_authority" />
+    <table id="29" parent="1" name="center_taocan" />
+    <table id="30" parent="1" name="center_vip" />
+    <table id="31" parent="1" name="center_wx" />
+    <table id="32" parent="1" name="customer_addprice" />
+    <table id="33" parent="1" name="customer_category" />
+    <table id="34" parent="1" name="customer_flag" />
+    <table id="35" parent="1" name="customer_goods" />
+    <table id="36" parent="1" name="customer_member" />
+    <table id="37" parent="1" name="customer_ordergoods" />
+    <table id="38" parent="1" name="customer_orderlist" />
+    <table id="39" parent="1" name="customer_paylist" />
+    <table id="40" parent="1" name="customer_shop" />
+    <table id="41" parent="1" name="customer_shopcart" />
+    <table id="42" parent="1" name="customer_shopcomments" />
+    <table id="43" parent="1" name="customer_shopvip" />
+    <table id="44" parent="1" name="customer_tablecheck" />
+    <table id="45" parent="1" name="customer_tags" />
+    <table id="46" parent="1" name="customer_tips" />
+    <table id="47" parent="1" name="customer_used" />
+    <table id="48" parent="1" name="manage_login_log" />
+    <table id="49" parent="1" name="manage_manager" />
+    <table id="50" parent="1" name="operate_manager" />
+    <table id="51" parent="1" name="waiter_area">
+      <comment>分区</comment>
+    </table>
+    <table id="52" parent="1" name="waiter_feedback">
+      <comment>反馈表</comment>
+    </table>
+    <table id="53" parent="1" name="waiter_msg">
+      <comment>消息</comment>
+    </table>
+    <table id="54" parent="1" name="waiter_table">
+      <comment>台位分区</comment>
+    </table>
+    <table id="55" parent="1" name="waiter_table_waiter" />
+    <column id="56" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="57" parent="7" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="58" parent="7" name="customer_email">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="59" parent="7" name="feedback_mills">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="60" parent="7" name="customer_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="61" parent="7" name="customer_username">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="62" parent="7" name="customer_message">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="63" parent="8" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="64" parent="8" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="65" parent="8" name="day_time_mills">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="66" parent="8" name="foods_gross">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="67" parent="8" name="opentable_rate">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="68" parent="8" name="foods_cost">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="69" parent="8" name="opentable_numble">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="70" parent="8" name="perpeople_money">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="71" parent="8" name="remarks">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="72" parent="8" name="all_money">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="73" parent="8" name="money_cash">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="74" parent="8" name="all_people">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="75" parent="8" name="call_number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="76" parent="8" name="payments">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="77" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="78" parent="9" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="79" parent="9" name="day_time_mills">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="80" parent="9" name="food_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="81" parent="9" name="day_number">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="82" parent="9" name="month_number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="83" parent="9" name="food_price">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="84" parent="9" name="food_cost">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="85" parent="9" name="food_type">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="86" parent="9" name="food_clear">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="87" parent="9" name="remarks">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="88" parent="9" name="food_id">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="89" parent="9" name="food_type_id">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="90" parent="9" name="food_parent_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="91" parent="9" name="food_parent_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="92" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="93" parent="10" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="94" parent="10" name="month_time_mills">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="95" parent="10" name="foods_gross">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="96" parent="10" name="opentable_rate">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="97" parent="10" name="foods_cost">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="98" parent="10" name="opentable_numble">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="99" parent="10" name="perpeople_money">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="100" parent="10" name="remarks">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="101" parent="10" name="all_money">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="102" parent="10" name="money_cash">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="103" parent="10" name="all_people">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="104" parent="10" name="call_number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="105" parent="10" name="payments">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="106" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="107" parent="11" name="shopid">
+      <data-type>int(25)|0</data-type>
+    </column>
+    <column id="108" parent="11" name="day_time_mills">
+      <data-type>int(20)|0</data-type>
+    </column>
+    <column id="109" parent="11" name="all_day_money">
+      <data-type>double(20)|0</data-type>
+    </column>
+    <column id="110" parent="11" name="bill_numble">
+      <data-type>int(20)|0</data-type>
+    </column>
+    <column id="111" parent="11" name="all_people_numble">
+      <data-type>int(20)|0</data-type>
+    </column>
+    <column id="112" parent="11" name="perpeople_money">
+      <data-type>double(20)|0</data-type>
+    </column>
+    <column id="113" parent="11" name="remarks">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="114" parent="11" name="opentable_rate">
+      <data-type>int(20)|0</data-type>
+    </column>
+    <column id="115" parent="11" name="call_waiter_number">
+      <data-type>int(20)|0</data-type>
+    </column>
+    <column id="116" parent="11" name="sunyi">
+      <data-type>double(20)|0</data-type>
+    </column>
+    <column id="117" parent="11" name="all_peopel_numble">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="118" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="119" parent="12" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="120" parent="12" name="year_time_mills">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="121" parent="12" name="foods_gross">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="122" parent="12" name="opentable_rate">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="123" parent="12" name="foods_cost">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="124" parent="12" name="opentable_numble">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="125" parent="12" name="perpeople_money">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="126" parent="12" name="remarks">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="127" parent="12" name="all_money">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="128" parent="12" name="money_cash">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="129" parent="12" name="all_people">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="130" parent="12" name="call_number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="131" parent="12" name="payments">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="132" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="133" parent="13" name="date_str">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="134" parent="13" name="order_number">
+      <comment>订单编号</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="135" parent="13" name="shop_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="136" parent="13" name="area_id">
+      <comment>区域ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="137" parent="13" name="table_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="138" parent="13" name="table_name">
+      <comment>桌位名字</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="139" parent="13" name="prpeople_number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="140" parent="13" name="billing_time">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="141" parent="13" name="finish_time">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="142" parent="13" name="remarks">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="143" parent="13" name="consume_money">
+      <comment>下单的菜品金额</comment>
+      <data-type>double(20,2)|0</data-type>
+    </column>
+    <column id="144" parent="13" name="charge_money">
+      <comment>附加费</comment>
+      <data-type>double(20,2)|0</data-type>
+    </column>
+    <column id="145" parent="13" name="should_money">
+      <comment>应收金额</comment>
+      <data-type>double(20,2)|0</data-type>
+    </column>
+    <column id="146" parent="13" name="reality_money">
+      <comment>实收金额</comment>
+      <data-type>double(20,2)|0</data-type>
+    </column>
+    <column id="147" parent="13" name="refund_money">
+      <comment>退款金额</comment>
+      <data-type>double(20,2)|0</data-type>
+    </column>
+    <column id="148" parent="13" name="payments">
+      <comment>顾客支付信息列表（金额，支付方式，支付时间|）</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="149" parent="13" name="discount_type">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="150" parent="13" name="discount_value">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="151" parent="13" name="call_infos">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="152" parent="13" name="waiter">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="153" parent="13" name="cashier">
+      <comment>收银员</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="154" parent="13" name="tcs">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="155" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="156" parent="14" name="shop_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="157" parent="14" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="158" parent="14" name="device_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="159" parent="14" name="type">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="160" parent="14" name="modes">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="161" parent="14" name="ycyd">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="162" parent="14" name="dyfs">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned zerofill|0</data-type>
+    </column>
+    <column id="163" parent="14" name="print_count">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="164" parent="14" name="print_size">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="165" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="166" parent="15" name="store_info_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="167" parent="15" name="zone_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="168" parent="15" name="zone_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="169" parent="15" name="dsc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="170" parent="15" name="price">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="171" parent="15" name="pay_type_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="172" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="173" parent="16" name="store_info_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="174" parent="16" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="175" parent="16" name="num">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="176" parent="16" name="printer_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="177" parent="16" name="printer_id1">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="178" parent="16" name="printer_id2">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="179" parent="16" name="printer_id3">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="180" parent="16" name="printer_id4">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="181" parent="16" name="printer_id5">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="182" parent="16" name="printer_ids">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="183" parent="16" name="sort">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned zerofill|0</data-type>
+    </column>
+    <column id="184" parent="17" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="185" parent="17" name="shop_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="186" parent="17" name="employee_types">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="187" parent="17" name="waiter_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="188" parent="17" name="nickname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="189" parent="17" name="authority_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="190" parent="17" name="authority_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="191" parent="17" name="pid">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="192" parent="17" name="tel">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="193" parent="17" name="user_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="194" parent="17" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="195" parent="17" name="userpass">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="196" parent="17" name="waiter_code">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="197" parent="17" name="headimgurl">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="198" parent="17" name="last_ip">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="199" parent="17" name="last_time">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="200" parent="17" name="waiter_permissions">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="201" parent="17" name="work_time">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="202" parent="17" name="closing_time">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="203" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="204" parent="18" name="shop_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="205" parent="18" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="206" parent="18" name="is_show">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="207" parent="18" name="pay_type_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="208" parent="19" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="209" parent="19" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="210" parent="19" name="tel">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="211" parent="19" name="address">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="212" parent="19" name="uname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="213" parent="20" name="c_key">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="214" parent="20" name="c_value">
+      <data-type>varchar(10240)|0</data-type>
+    </column>
+    <column id="215" parent="21" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="216" parent="21" name="shop_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="217" parent="21" name="username">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="218" parent="21" name="login_time">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="219" parent="21" name="logout_time">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="220" parent="21" name="login_time_str">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="221" parent="21" name="logout_time_str">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="222" parent="22" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="223" parent="22" name="store_info_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="224" parent="22" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="225" parent="22" name="time_scope">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="226" parent="23" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="227" parent="23" name="store_info_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="228" parent="23" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="229" parent="23" name="is_type_in_sale">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="230" parent="23" name="pay_type_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="231" parent="23" name="pay_type_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="232" parent="24" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="233" parent="24" name="shop_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="234" parent="24" name="shop_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="235" parent="24" name="create_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="236" parent="24" name="online_time_length">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="237" parent="24" name="opentable_nums">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="238" parent="24" name="opentable_rate">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="239" parent="24" name="all_people">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="240" parent="24" name="all_money">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="241" parent="24" name="perpeople_money">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="242" parent="24" name="last_update_time">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="243" parent="24" name="online_time_string">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="244" parent="25" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="245" parent="25" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="246" parent="25" name="image_index">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="247" parent="25" name="image_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="248" parent="26" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="249" parent="26" name="shop_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="250" parent="26" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="251" parent="26" name="orderid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="252" parent="27" name="accounts">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="253" parent="27" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="254" parent="27" name="dsc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="255" parent="27" name="create_time">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="256" parent="27" name="shopid">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="257" parent="28" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="258" parent="28" name="store_info_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="259" parent="28" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="260" parent="28" name="authority_content">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="261" parent="28" name="discount_min">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="262" parent="28" name="discount_max">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="263" parent="28" name="discount_money">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="264" parent="29" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="265" parent="29" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="266" parent="29" name="goods_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="267" parent="29" name="child_goods_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="268" parent="29" name="count">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="269" parent="30" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="270" parent="30" name="number">
+      <comment>会员ID</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="271" parent="30" name="store_info_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="272" parent="30" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="273" parent="30" name="tel">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="274" parent="30" name="comp">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="275" parent="30" name="code">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="276" parent="30" name="sex">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="277" parent="30" name="birthday">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="278" parent="30" name="pid">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="279" parent="30" name="reg_time">
+      <comment>注册时间</comment>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="280" parent="31" name="shop_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="281" parent="31" name="app_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="282" parent="31" name="app_secret">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="283" parent="31" name="mchid">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="284" parent="31" name="wxkey">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="285" parent="32" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="286" parent="32" name="orderlistid">
+      <comment>订单列表id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="287" parent="32" name="zone_id">
+      <comment>区域id -1=全场</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="288" parent="32" name="dsc">
+      <comment>费用名</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="289" parent="32" name="price">
+      <comment>数值</comment>
+      <mandatory>1</mandatory>
+      <data-type>double(16)|0</data-type>
+    </column>
+    <column id="290" parent="32" name="pay_type_id">
+      <comment>数值类型</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="291" parent="32" name="peples">
+      <comment>人数 默认为1</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'1'</default-expression>
+    </column>
+    <column id="292" parent="33" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="293" parent="33" name="shopid">
+      <comment>分店ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="294" parent="33" name="title">
+      <comment>分类名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="295" parent="33" name="orderid">
+      <comment>分类排序</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="296" parent="33" name="checkinfo">
+      <comment>是否显示 0=否 1=是</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="297" parent="33" name="parrent_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="298" parent="33" name="num">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="299" parent="33" name="printer_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="300" parent="33" name="printer_id1">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="301" parent="33" name="printer_id2">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="302" parent="33" name="printer_id3">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="303" parent="33" name="printer_id4">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="304" parent="33" name="printer_id5">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="305" parent="33" name="printer_ids">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="306" parent="34" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="307" parent="34" name="shop_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="308" parent="34" name="flag">
+      <comment>标记字符</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="309" parent="34" name="title">
+      <comment>标记名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="310" parent="34" name="orderid">
+      <comment>标记排序</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="311" parent="34" name="checkinfo">
+      <comment>是否显示</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="312" parent="34" name="posttime">
+      <comment>操作时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="313" parent="35" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="314" parent="35" name="shopid">
+      <comment>分店ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="315" parent="35" name="typeid">
+      <comment>类型ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="316" parent="35" name="title">
+      <comment>菜品名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="317" parent="35" name="price">
+      <comment>菜品价格</comment>
+      <data-type>float(16,2)|0</data-type>
+    </column>
+    <column id="318" parent="35" name="picurl">
+      <comment>菜品主图</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="319" parent="35" name="picarr">
+      <comment>菜品组图</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="320" parent="35" name="tags">
+      <comment>菜品标识 如:掌柜推荐</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="321" parent="35" name="tips">
+      <comment>下架售完备注</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="322" parent="35" name="salenums">
+      <comment>销售数量合计</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="323" parent="35" name="orderid">
+      <comment>菜品排序</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="324" parent="35" name="checkinfo">
+      <comment>上传审核 0=未审 1=已审</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="325" parent="35" name="posttime">
+      <comment>上传时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="326" parent="35" name="category_id1">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="327" parent="35" name="typename">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="328" parent="35" name="category_name1">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="329" parent="35" name="num">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="330" parent="35" name="time">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="331" parent="35" name="flag">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="332" parent="35" name="settlement_unit">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="333" parent="35" name="select_unit">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="334" parent="35" name="allow_discount">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="335" parent="35" name="dsc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="336" parent="35" name="do_way">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="337" parent="35" name="picid">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="338" parent="35" name="repertory">
+      <comment>库存</comment>
+      <mandatory>1</mandatory>
+      <data-type>double(20,2)|0</data-type>
+      <default-expression>'-1.00'</default-expression>
+    </column>
+    <column id="339" parent="35" name="czjs">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned zerofill|0</data-type>
+    </column>
+    <column id="340" parent="35" name="printer_ids">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="341" parent="35" name="is_tc">
+      <comment>是否套餐</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned zerofill|0</data-type>
+    </column>
+    <column id="342" parent="36" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="343" parent="36" name="openid">
+      <comment>授权标识</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="344" parent="36" name="nickname">
+      <comment>昵称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="345" parent="36" name="headimgurl">
+      <comment>用户头像</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="346" parent="36" name="sex">
+      <comment>性别：1=男 2=女 0=未知</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="347" parent="36" name="city">
+      <comment>城市</comment>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="348" parent="36" name="province">
+      <comment>省份</comment>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="349" parent="36" name="country">
+      <comment>国家</comment>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="350" parent="36" name="username">
+      <comment>真实姓名</comment>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="351" parent="36" name="birthday">
+      <comment>生日</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="352" parent="36" name="phone">
+      <comment>手机</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="353" parent="36" name="hotline">
+      <comment>电话</comment>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="354" parent="36" name="numcode">
+      <comment>身份证</comment>
+      <data-type>varchar(18)|0</data-type>
+    </column>
+    <column id="355" parent="36" name="logintime">
+      <comment>登录时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="356" parent="36" name="posttime">
+      <comment>操作时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="357" parent="37" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="358" parent="37" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="359" parent="37" name="orderid">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="360" parent="37" name="good_id">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="361" parent="37" name="title">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="362" parent="37" name="category_id1">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="363" parent="37" name="typeid">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="364" parent="37" name="price">
+      <data-type>double(20,2)|0</data-type>
+    </column>
+    <column id="365" parent="37" name="nums">
+      <data-type>double(20,2)|0</data-type>
+    </column>
+    <column id="366" parent="37" name="flag">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="367" parent="37" name="moresay">
+      <comment>备注</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="368" parent="37" name="ordertag">
+      <comment>0=正常 2=退菜</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="369" parent="37" name="reason">
+      <comment>退菜原因</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="370" parent="37" name="cache_tag">
+      <data-type>tinyint(3)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="371" parent="37" name="front">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="372" parent="37" name="posttime">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="373" parent="37" name="pay_way">
+      <comment>支付方式 0=未支付 1=现金 2=银行卡 3=会员卡 4=信用卡 5=支付宝 6=微信 7=挂账</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="374" parent="37" name="taocan_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="375" parent="38" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="376" parent="38" name="order_number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="377" parent="38" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="378" parent="38" name="areaid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="379" parent="38" name="tableid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="380" parent="38" name="people_number">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="381" parent="38" name="order_status">
+      <comment>0=正常 1=撤单</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="382" parent="38" name="reason">
+      <comment>撤单原因</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="383" parent="38" name="memo_all">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="384" parent="38" name="is_into_kitchen">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="385" parent="38" name="distype">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="386" parent="38" name="disprice">
+      <data-type>double(20,2)|0</data-type>
+    </column>
+    <column id="387" parent="38" name="charges">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="388" parent="38" name="waiter">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="389" parent="38" name="cashier">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="390" parent="38" name="reality_money">
+      <comment>实收金额</comment>
+      <data-type>double(20,2)|0</data-type>
+    </column>
+    <column id="391" parent="38" name="payments">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="392" parent="38" name="waitercode">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="393" parent="38" name="posttime">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="394" parent="38" name="fendanhao">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="395" parent="38" name="fjz_reason">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="396" parent="38" name="is_kaifapiao">
+      <comment>是否开了发票</comment>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="397" parent="38" name="tcs">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="398" parent="39" name="id">
+      <comment>手动增加唯一ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="399" parent="39" name="orderid">
+      <comment>支付订单号</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="400" parent="39" name="payid">
+      <comment>随机订单号</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="401" parent="39" name="openid">
+      <comment>微信用户标识</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="402" parent="39" name="statu">
+      <comment>支付状态 0=未付款 1=已支付</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="403" parent="39" name="posttime">
+      <comment>操作时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="404" parent="39" name="paytime">
+      <comment>支付时间</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="405" parent="39" name="nowstatu">
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="406" parent="40" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="407" parent="40" name="regional">
+      <comment>全国地域</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="408" parent="40" name="title">
+      <comment>店铺名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="409" parent="40" name="logourl">
+      <comment>店铺LOGO</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="410" parent="40" name="hotline">
+      <comment>店铺电话</comment>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="411" parent="40" name="picarr">
+      <comment>店铺图组</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="412" parent="40" name="shop_number">
+      <comment>商店编号</comment>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="413" parent="40" name="address">
+      <comment>店铺地址</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="414" parent="40" name="starttime">
+      <comment>营业时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="415" parent="40" name="endtime">
+      <comment>打烊时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="416" parent="40" name="posttime">
+      <comment>操作时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="417" parent="40" name="uname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="418" parent="40" name="contacts">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="419" parent="40" name="postcode">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="420" parent="40" name="icon_id">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="421" parent="40" name="config">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="422" parent="40" name="wifissid">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="423" parent="40" name="wifipassword">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="424" parent="40" name="wifi_ssid">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="425" parent="40" name="wifi_password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="426" parent="41" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="427" parent="41" name="shopid">
+      <comment>分店ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="428" parent="41" name="areaid">
+      <comment>区域ID 1=不分区</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="429" parent="41" name="tableid">
+      <comment>桌号ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="430" parent="41" name="fendanhao">
+      <comment>分单号</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'1'</default-expression>
+    </column>
+    <column id="431" parent="41" name="goodid">
+      <comment>商品ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="432" parent="41" name="category_id1">
+      <comment>主分类id</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="433" parent="41" name="typeid">
+      <comment>菜品分类ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="434" parent="41" name="title">
+      <comment>商品名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="435" parent="41" name="picurl">
+      <data-type>varchar(64)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="436" parent="41" name="price">
+      <comment>商品价格</comment>
+      <data-type>double(16,2)|0</data-type>
+      <default-expression>'0.00'</default-expression>
+    </column>
+    <column id="437" parent="41" name="nums">
+      <comment>商品数量</comment>
+      <mandatory>1</mandatory>
+      <data-type>double(20,2)|0</data-type>
+      <default-expression>'0.00'</default-expression>
+    </column>
+    <column id="438" parent="41" name="flag">
+      <comment>商品属性</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="439" parent="41" name="moresay">
+      <comment>商品备注</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="440" parent="41" name="checkinfo">
+      <comment>菜品审核 0=未提交 1=已提交 2=取消 3=确认</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="441" parent="41" name="cache_checkinfo">
+      <comment>菜品审核 0=未提交 1=已提交 2=取消 3=确认</comment>
+      <data-type>tinyint(3)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="442" parent="41" name="msg_id">
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="443" parent="41" name="status">
+      <comment>3=暂不上 4=已下厨</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="444" parent="41" name="openid">
+      <comment>操作人员识别</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="445" parent="41" name="tag">
+      <comment>区分人员 0=顾客 1=服务员</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="446" parent="41" name="posttime">
+      <comment>操作时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="447" parent="42" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="448" parent="42" name="shopid">
+      <comment>店铺ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="449" parent="42" name="orderid">
+      <comment>订单号</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="450" parent="42" name="evaluation">
+      <comment>评价 1=好评 2=差评</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="451" parent="42" name="taste">
+      <comment>口味 1--5星 默认0星</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="452" parent="42" name="speed">
+      <comment>速度 1--5星 默认0星</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="453" parent="42" name="environment">
+      <comment>环境 1--5星 默认0星</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="454" parent="42" name="noteinfo">
+      <comment>备注信息</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="455" parent="42" name="openid">
+      <comment>操作人员</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="456" parent="42" name="posttime">
+      <comment>操作时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="457" parent="43" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="458" parent="43" name="mid">
+      <comment>会员ID</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="459" parent="43" name="shopid">
+      <comment>店铺ID</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="460" parent="43" name="level">
+      <comment>等级设定 0=无等级 1=一级 ....</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="461" parent="43" name="jointime">
+      <comment>加入时间</comment>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="462" parent="44" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="463" parent="44" name="shopid">
+      <comment>分店ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="464" parent="44" name="areaid">
+      <comment>区域ID 0=不分区</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="465" parent="44" name="tableid">
+      <comment>桌号ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="466" parent="44" name="fendanhao">
+      <comment>分单号</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'1'</default-expression>
+    </column>
+    <column id="467" parent="44" name="openid">
+      <comment>操作人员识别</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="468" parent="44" name="posttime">
+      <comment>操作时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="469" parent="45" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="470" parent="45" name="shopid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="471" parent="45" name="tags">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="472" parent="45" name="title">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="473" parent="45" name="checkinfo">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="474" parent="45" name="orderid">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="475" parent="45" name="posttime">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="476" parent="46" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="477" parent="46" name="shop_id">
+      <comment>分店id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="478" parent="46" name="tips">
+      <comment>标记字符</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="479" parent="46" name="title">
+      <comment>标记名称</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="480" parent="46" name="orderid">
+      <comment>标记排序</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="481" parent="46" name="checkinfo">
+      <comment>是否显示</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="482" parent="46" name="posttime">
+      <comment>操作时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="483" parent="47" name="id">
+      <comment>自动增加</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="484" parent="47" name="shopid">
+      <comment>分店ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="485" parent="47" name="areaid">
+      <comment>区域ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="486" parent="47" name="tableid">
+      <comment>桌号ID</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="487" parent="47" name="fendanhao">
+      <comment>分单号</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'1'</default-expression>
+    </column>
+    <column id="488" parent="47" name="fendannum">
+      <comment>分单判断 默认1  2表示增加一个分单</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'1'</default-expression>
+    </column>
+    <column id="489" parent="47" name="peples">
+      <comment>当前桌人数</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="490" parent="47" name="openid">
+      <comment>身份识别</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="491" parent="47" name="tag">
+      <comment>区分 0=顾客 1=服务员</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="492" parent="47" name="posttime">
+      <comment>操作时间</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="493" parent="48" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="494" parent="48" name="time">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="495" parent="48" name="username">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="496" parent="48" name="ip">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="497" parent="49" name="uname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="498" parent="49" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="499" parent="49" name="last_login_time">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="500" parent="50" name="uname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="501" parent="50" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="502" parent="50" name="last_login_time">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="503" parent="51" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="504" parent="51" name="area_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="505" parent="51" name="shop_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="506" parent="51" name="area_name">
+      <comment>分区名</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="507" parent="51" name="area_sort">
+      <comment>排序，</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="508" parent="51" name="num">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="509" parent="52" name="Id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="510" parent="52" name="shop_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="511" parent="52" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="512" parent="52" name="feedback">
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <column id="513" parent="52" name="someone">
+      <comment>反馈人</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="514" parent="52" name="time">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="515" parent="53" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="516" parent="53" name="shop_id">
+      <comment>分店id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="517" parent="53" name="msg_areaid">
+      <comment>分区id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="518" parent="53" name="msg_tableid">
+      <comment>桌id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="519" parent="53" name="fendanhao">
+      <comment>分单号</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'1'</default-expression>
+    </column>
+    <column id="520" parent="53" name="msg_type">
+      <comment>消息类型,0=顾客消息,1=系统消息</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="521" parent="53" name="msg_request_type">
+      <comment>顾客请求的消息类型,0=审核菜品，100=加菜审核，1=催菜,2=加水，3=纸巾，4=呼叫服务员 .....
+-3 =请求服务员微信支付确认，-2=呼叫服务员现金支付，-1=呼叫服务员刷卡</comment>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="522" parent="53" name="msg_content">
+      <comment>消息内容</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="523" parent="53" name="msg_status">
+      <comment>消息状态,0=未处理，1=已处理, 2=处理中</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="524" parent="53" name="cache_msg_status">
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="525" parent="53" name="msg_request_time">
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="526" parent="53" name="msg_dodeal_time">
+      <comment>处理时间</comment>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="527" parent="53" name="msg_from">
+      <comment>发消息的顾客openid</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="528" parent="53" name="msg_waiter">
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="529" parent="54" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="530" parent="54" name="shop_id">
+      <comment>店id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="531" parent="54" name="area_id">
+      <comment>分区id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'1'</default-expression>
+    </column>
+    <column id="532" parent="54" name="table_name">
+      <comment>桌名</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>'大厅'</default-expression>
+    </column>
+    <column id="533" parent="54" name="table_human_num">
+      <comment>容纳人数</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'4'</default-expression>
+    </column>
+    <column id="534" parent="54" name="table_eating">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="535" parent="54" name="table_status">
+      <comment>状态，0-空闲，1-正在用餐，2-已被预定</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="536" parent="54" name="waiter">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="537" parent="54" name="time">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="538" parent="54" name="parrent_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="539" parent="54" name="num">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="540" parent="54" name="type">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="541" parent="54" name="type_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="542" parent="54" name="area_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="543" parent="54" name="table_lock">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="544" parent="55" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="545" parent="55" name="shop_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="546" parent="55" name="waiter_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="547" parent="55" name="table_id">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+  </database-model>
+</dataSource>
