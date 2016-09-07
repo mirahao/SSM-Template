@@ -155,8 +155,7 @@
         <version>${slf4j.version}</version>
       </dependency>
 
-      <!-- log end -->
-      <!-- 映入JSON -->
+      <!-- 引入JSON -->
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-mapper-asl</artifactId>
