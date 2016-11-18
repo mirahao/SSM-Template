@@ -63,7 +63,7 @@
     <welcome-file>/index.jsp</welcome-file>
   </welcome-file-list>
 
-  <!-- session配置 -->
+  <!-- session保留时间设置，单位为分钟 -->
   <session-config>
     <session-timeout>15</session-timeout>
   </session-config>
